@@ -1,8 +1,20 @@
 #include <stdio.h>
 
+int sumof(int a, int b)
+{
+	int sum = 0;
+	for(a; a<=b; a++)
+	{
+		sum += a;
+	}
+	
+	return sum;
+}
+
+
 int main() {
 	
-	int n;
+/*	int n;
 	
 	printf("입력: ");
 	scanf("%d", &n);
@@ -18,4 +30,9 @@ int main() {
 		sum += (i + 1 + n - i);
 	}
 	printf("%d\n", sum);
+	*/
+	int c, d;
+	printf("두 값을 입력: "); scanf("%d %d", &c, &d);
+	int isum = sumof(c, d);
+	printf("총합: %d", isum);
 }
